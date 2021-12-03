@@ -26,7 +26,6 @@ class FlickerUITests: XCTestCase {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
-
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
@@ -39,4 +38,77 @@ class FlickerUITests: XCTestCase {
             }
         }
     }
+  
+  func testNavigateToSearchViewController() {
+    let app = XCUIApplication()
+    app.launch()
+    app.tabBars["Tab Bar"].buttons["Search"].tap()
+    XCTAssertTrue(app.searchFields["Search photo here..."].exists)
+  }
+  
+  func testSearchBarCancelDismissesKeyboard() {
+    let app = XCUIApplication()
+    app.launch()
+    app.tabBars["Tab Bar"].buttons["Search"].tap()
+    app.searchFields["Search photo here..."].tap()
+    app.buttons["Cancel"].tap()
+    XCTAssertEqual(app.keyboards.count, 0)
+  }
+  
+  func testSearchBarCancelClearsText() {
+    let app = XCUIApplication()
+    app.launch()
+    app.tabBars["Tab Bar"].buttons["Search"].tap()
+    app.searchFields["Search photo here..."].tap()
+    
+    let aKey = app.keyboards.keys["A"]
+    aKey.tap()
+    
+    let bKey = app.keyboards.keys["b"]
+    bKey.tap()
+    
+    let cKey = app.keyboards.keys["c"]
+    cKey.tap()
+    
+    app.buttons["Cancel"].tap()
+    
+    XCTAssertEqual(app.searchFields["Search photo here..."].label, "Search photo here...")
+  }
+  
+  func testSearchButtonDismissesKeyboard() {
+    let app = XCUIApplication()
+    app.launch()
+    app.tabBars["Tab Bar"].buttons["Search"].tap()
+    app.searchFields["Search photo here..."].tap()
+    app.keyboards.buttons["Search"].tap()
+    print(app.keyboards.count)
+    XCTAssertEqual(app.keyboards.count, 0)
+  }
+  
+  func testSearchButtonDoesnotClearText() {
+    let app = XCUIApplication()
+    app.launch()
+    app.tabBars["Tab Bar"].buttons["Search"].tap()
+    app.searchFields["Search photo here..."].tap()
+    
+    let aKey = app.keyboards.keys["A"]
+    aKey.tap()
+    
+    let bKey = app.keyboards.keys["b"]
+    bKey.tap()
+    
+    let cKey = app.keyboards.keys["c"]
+    cKey.tap()
+    
+    app.keyboards.buttons["Search"].tap()
+    
+    XCTAssertEqual(app.searchFields["Search photo here..."].value as! String, "Abc")
+  }
+  
+  func testNavigateHistoryViewController() {
+    let app = XCUIApplication()
+    app.launch()
+    XCUIApplication().tabBars["Tab Bar"].buttons["History"].tap()
+    
+  }
 }

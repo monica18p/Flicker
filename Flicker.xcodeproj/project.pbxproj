@@ -9,13 +9,21 @@
 /* Begin PBXBuildFile section */
 		DDB4B6F92759F01700E96979 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4B6F82759F01700E96979 /* AppDelegate.swift */; };
 		DDB4B6FB2759F01700E96979 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4B6FA2759F01700E96979 /* SceneDelegate.swift */; };
-		DDB4B6FD2759F01700E96979 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4B6FC2759F01700E96979 /* ViewController.swift */; };
 		DDB4B7002759F01700E96979 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDB4B6FE2759F01700E96979 /* Main.storyboard */; };
 		DDB4B7022759F01C00E96979 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDB4B7012759F01C00E96979 /* Assets.xcassets */; };
 		DDB4B7052759F01C00E96979 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDB4B7032759F01C00E96979 /* LaunchScreen.storyboard */; };
 		DDB4B7102759F01C00E96979 /* FlickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4B70F2759F01C00E96979 /* FlickerTests.swift */; };
 		DDB4B71A2759F01C00E96979 /* FlickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4B7192759F01C00E96979 /* FlickerUITests.swift */; };
 		DDB4B71C2759F01C00E96979 /* FlickerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4B71B2759F01C00E96979 /* FlickerUITestsLaunchTests.swift */; };
+		DDB4B72D275A788600E96979 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4B72C275A788600E96979 /* SearchViewController.swift */; };
+		DDB4B72E275A788600E96979 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4B72C275A788600E96979 /* SearchViewController.swift */; };
+		DDB4B72F275A788600E96979 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4B72C275A788600E96979 /* SearchViewController.swift */; };
+		DDB4B731275A794A00E96979 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4B730275A794A00E96979 /* HistoryViewController.swift */; };
+		DDB4B732275A794A00E96979 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4B730275A794A00E96979 /* HistoryViewController.swift */; };
+		DDB4B733275A794A00E96979 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4B730275A794A00E96979 /* HistoryViewController.swift */; };
+		DDB4B736275A7C4700E96979 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4B735275A7C4700E96979 /* ImageCollectionViewCell.swift */; };
+		DDB4B737275A7C4700E96979 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4B735275A7C4700E96979 /* ImageCollectionViewCell.swift */; };
+		DDB4B738275A7C4700E96979 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4B735275A7C4700E96979 /* ImageCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +47,6 @@
 		DDB4B6F52759F01700E96979 /* Flicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDB4B6F82759F01700E96979 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDB4B6FA2759F01700E96979 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DDB4B6FC2759F01700E96979 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DDB4B6FF2759F01700E96979 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DDB4B7012759F01C00E96979 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDB4B7042759F01C00E96979 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +56,9 @@
 		DDB4B7152759F01C00E96979 /* FlickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDB4B7192759F01C00E96979 /* FlickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerUITests.swift; sourceTree = "<group>"; };
 		DDB4B71B2759F01C00E96979 /* FlickerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DDB4B72C275A788600E96979 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = ../../../SearchViewController.swift; sourceTree = "<group>"; };
+		DDB4B730275A794A00E96979 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HistoryViewController.swift; path = ../../../HistoryViewController.swift; sourceTree = "<group>"; };
+		DDB4B735275A7C4700E96979 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageCollectionViewCell.swift; path = ../../../ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +109,16 @@
 		DDB4B6F72759F01700E96979 /* Flicker */ = {
 			isa = PBXGroup;
 			children = (
-				DDB4B6F82759F01700E96979 /* AppDelegate.swift */,
-				DDB4B6FA2759F01700E96979 /* SceneDelegate.swift */,
-				DDB4B6FC2759F01700E96979 /* ViewController.swift */,
+				DDB4B729275A727500E96979 /* Model */,
+				DDB4B734275A7C1E00E96979 /* View */,
+				DDB4B72A275A727D00E96979 /* ViewModel */,
+				DDB4B728275A726700E96979 /* Controller */,
 				DDB4B6FE2759F01700E96979 /* Main.storyboard */,
+				DDB4B7062759F01C00E96979 /* Info.plist */,
 				DDB4B7012759F01C00E96979 /* Assets.xcassets */,
 				DDB4B7032759F01C00E96979 /* LaunchScreen.storyboard */,
-				DDB4B7062759F01C00E96979 /* Info.plist */,
+				DDB4B6F82759F01700E96979 /* AppDelegate.swift */,
+				DDB4B6FA2759F01700E96979 /* SceneDelegate.swift */,
 			);
 			path = Flicker;
 			sourceTree = "<group>";
@@ -125,6 +138,37 @@
 				DDB4B71B2759F01C00E96979 /* FlickerUITestsLaunchTests.swift */,
 			);
 			path = FlickerUITests;
+			sourceTree = "<group>";
+		};
+		DDB4B728275A726700E96979 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DDB4B72C275A788600E96979 /* SearchViewController.swift */,
+				DDB4B730275A794A00E96979 /* HistoryViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DDB4B729275A727500E96979 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DDB4B72A275A727D00E96979 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DDB4B734275A7C1E00E96979 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DDB4B735275A7C4700E96979 /* ImageCollectionViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +302,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDB4B6FD2759F01700E96979 /* ViewController.swift in Sources */,
+				DDB4B72D275A788600E96979 /* SearchViewController.swift in Sources */,
+				DDB4B736275A7C4700E96979 /* ImageCollectionViewCell.swift in Sources */,
 				DDB4B6F92759F01700E96979 /* AppDelegate.swift in Sources */,
 				DDB4B6FB2759F01700E96979 /* SceneDelegate.swift in Sources */,
+				DDB4B731275A794A00E96979 /* HistoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +314,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDB4B732275A794A00E96979 /* HistoryViewController.swift in Sources */,
+				DDB4B72E275A788600E96979 /* SearchViewController.swift in Sources */,
+				DDB4B737275A7C4700E96979 /* ImageCollectionViewCell.swift in Sources */,
 				DDB4B7102759F01C00E96979 /* FlickerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,8 +325,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDB4B72F275A788600E96979 /* SearchViewController.swift in Sources */,
+				DDB4B738275A7C4700E96979 /* ImageCollectionViewCell.swift in Sources */,
 				DDB4B71A2759F01C00E96979 /* FlickerUITests.swift in Sources */,
 				DDB4B71C2759F01C00E96979 /* FlickerUITestsLaunchTests.swift in Sources */,
+				DDB4B733275A794A00E96979 /* HistoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
