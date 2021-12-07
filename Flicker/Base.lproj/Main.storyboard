@@ -17,6 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search to create history !" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTu-6J-IGr">
+                                <rect key="frame" x="10" y="418.5" width="394" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vAl-zg-1LT">
                                 <rect key="frame" x="0.0" y="74" width="414" height="739"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -55,14 +61,19 @@
                         <viewLayoutGuide key="safeArea" id="7XW-20-PCo"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="7XW-20-PCo" firstAttribute="trailing" secondItem="MTu-6J-IGr" secondAttribute="trailing" constant="10" id="GNZ-lY-ci1"/>
+                            <constraint firstItem="MTu-6J-IGr" firstAttribute="centerX" secondItem="7XW-20-PCo" secondAttribute="centerX" id="GPm-3T-Thj"/>
                             <constraint firstItem="7XW-20-PCo" firstAttribute="trailing" secondItem="vAl-zg-1LT" secondAttribute="trailing" id="Ypg-qO-q20"/>
+                            <constraint firstItem="MTu-6J-IGr" firstAttribute="centerY" secondItem="7XW-20-PCo" secondAttribute="centerY" id="dPE-Su-17o"/>
                             <constraint firstItem="vAl-zg-1LT" firstAttribute="top" secondItem="7XW-20-PCo" secondAttribute="top" constant="30" id="gmk-vt-Djc"/>
                             <constraint firstItem="7XW-20-PCo" firstAttribute="bottom" secondItem="vAl-zg-1LT" secondAttribute="bottom" id="m6U-WA-em2"/>
+                            <constraint firstItem="MTu-6J-IGr" firstAttribute="leading" secondItem="7XW-20-PCo" secondAttribute="leading" constant="10" id="qhv-md-0kc"/>
                             <constraint firstItem="vAl-zg-1LT" firstAttribute="leading" secondItem="7XW-20-PCo" secondAttribute="leading" id="vc3-PO-Ju3"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="History" image="archivebox" catalog="system" id="Gyt-4b-ufJ"/>
                     <connections>
+                        <outlet property="noHistoryLbl" destination="MTu-6J-IGr" id="kgg-aD-BPZ"/>
                         <outlet property="tableView" destination="vAl-zg-1LT" id="rXe-s9-cml"/>
                     </connections>
                 </viewController>
@@ -180,6 +191,9 @@
         <image name="archivebox" catalog="system" width="128" height="106"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="placeholder" width="85.5" height="85.5"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

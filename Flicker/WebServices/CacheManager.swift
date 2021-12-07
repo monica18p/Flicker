@@ -23,10 +23,7 @@ class CacheManager {
     }
     
     print("Fetching fresh...")
-    
     // Make image loading asynchronous, moving the work off the main queue.
-    
-    print("Triggering download for \(photoInfo.id)")
     async let data = try await SearchImageAPIService.downloadImage(info: photoInfo)
     let asyncData = try await data
     let image = UIImage(data: asyncData)
