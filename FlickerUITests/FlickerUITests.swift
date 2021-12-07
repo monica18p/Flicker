@@ -39,6 +39,7 @@ class FlickerUITests: XCTestCase {
         }
     }
   
+// MARK: TabBarController Tests
   func testNavigateToSearchViewController() {
     let app = XCUIApplication()
     app.launch()
@@ -46,6 +47,14 @@ class FlickerUITests: XCTestCase {
     XCTAssertTrue(app.searchFields["Search photo here..."].exists)
   }
   
+  func testNavigateHistoryViewController() {
+    let app = XCUIApplication()
+    app.launch()
+    app.tabBars["Tab Bar"].buttons["History"].tap()
+    XCTAssertFalse(app.searchFields["Search photo here..."].exists)
+  }
+  
+// MARK: Search ViewController Tests
   func testSearchBarCancelDismissesKeyboard() {
     let app = XCUIApplication()
     app.launch()
@@ -105,10 +114,29 @@ class FlickerUITests: XCTestCase {
     XCTAssertEqual(app.searchFields["Search photo here..."].value as! String, "Abc")
   }
   
-  func testNavigateHistoryViewController() {
+  
+// MARK: History ViewController Tests
+  func testTappingHistoryItemLoadsSearchVCWithSameQuery() {
     let app = XCUIApplication()
     app.launch()
-    XCUIApplication().tabBars["Tab Bar"].buttons["History"].tap()
+    app.tabBars["Tab Bar"].buttons["Search"].tap()
+    app.searchFields["Search photo here..."].tap()
     
+    let aKey = app.keyboards.keys["A"]
+    aKey.tap()
+    
+    let bKey = app.keyboards.keys["b"]
+    bKey.tap()
+    
+    let cKey = app.keyboards.keys["c"]
+    cKey.tap()
+    
+    app.keyboards.buttons["Search"].tap()
+    
+    app.tabBars["Tab Bar"].buttons["History"].tap()
+    
+    app.tables.cells.element.tap()
+    
+    XCTAssertEqual(app.searchFields["Search photo here..."].value as! String, "Abc")
   }
 }
