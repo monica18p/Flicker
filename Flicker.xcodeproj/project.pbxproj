@@ -19,6 +19,24 @@
 		DD3E4611275F0E7F00B6FEA0 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3E4606275E4F8200B6FEA0 /* History.swift */; };
 		DD3E4612275F0E8900B6FEA0 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3E460A275E552300B6FEA0 /* TabBarController.swift */; };
 		DD3E4613275F0E8A00B6FEA0 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3E460A275E552300B6FEA0 /* TabBarController.swift */; };
+		DD7CF1572764827800E16AA4 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7CF1552764827800E16AA4 /* APIService.swift */; };
+		DD7CF1582764827800E16AA4 /* SearchImageAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7CF1562764827800E16AA4 /* SearchImageAPIService.swift */; };
+		DD7CF15A276482A100E16AA4 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7CF159276482A100E16AA4 /* SearchResult.swift */; };
+		DD7CF15D276482B200E16AA4 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7CF15C276482B200E16AA4 /* ImageCollectionViewCell.swift */; };
+		DD7CF160276482C400E16AA4 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7CF15E276482C400E16AA4 /* HistoryViewController.swift */; };
+		DD7CF161276482C400E16AA4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7CF15F276482C400E16AA4 /* SearchViewController.swift */; };
+		DD7CF162276482CC00E16AA4 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7CF15E276482C400E16AA4 /* HistoryViewController.swift */; };
+		DD7CF163276482CD00E16AA4 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7CF15E276482C400E16AA4 /* HistoryViewController.swift */; };
+		DD7CF164276482D100E16AA4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7CF15F276482C400E16AA4 /* SearchViewController.swift */; };
+		DD7CF165276482D200E16AA4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7CF15F276482C400E16AA4 /* SearchViewController.swift */; };
+		DD7CF166276482E900E16AA4 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7CF15C276482B200E16AA4 /* ImageCollectionViewCell.swift */; };
+		DD7CF167276482EA00E16AA4 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7CF15C276482B200E16AA4 /* ImageCollectionViewCell.swift */; };
+		DD7CF168276482EF00E16AA4 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7CF159276482A100E16AA4 /* SearchResult.swift */; };
+		DD7CF169276482EF00E16AA4 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7CF159276482A100E16AA4 /* SearchResult.swift */; };
+		DD7CF16A276482F300E16AA4 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7CF1552764827800E16AA4 /* APIService.swift */; };
+		DD7CF16B276482F300E16AA4 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7CF1552764827800E16AA4 /* APIService.swift */; };
+		DD7CF16C276482F600E16AA4 /* SearchImageAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7CF1562764827800E16AA4 /* SearchImageAPIService.swift */; };
+		DD7CF16D276482F700E16AA4 /* SearchImageAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7CF1562764827800E16AA4 /* SearchImageAPIService.swift */; };
 		DDB4B6F92759F01700E96979 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4B6F82759F01700E96979 /* AppDelegate.swift */; };
 		DDB4B6FB2759F01700E96979 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4B6FA2759F01700E96979 /* SceneDelegate.swift */; };
 		DDB4B7002759F01700E96979 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDB4B6FE2759F01700E96979 /* Main.storyboard */; };
@@ -27,24 +45,6 @@
 		DDB4B7102759F01C00E96979 /* FlickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4B70F2759F01C00E96979 /* FlickerTests.swift */; };
 		DDB4B71A2759F01C00E96979 /* FlickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4B7192759F01C00E96979 /* FlickerUITests.swift */; };
 		DDB4B71C2759F01C00E96979 /* FlickerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4B71B2759F01C00E96979 /* FlickerUITestsLaunchTests.swift */; };
-		DDB4B72D275A788600E96979 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4B72C275A788600E96979 /* SearchViewController.swift */; };
-		DDB4B72E275A788600E96979 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4B72C275A788600E96979 /* SearchViewController.swift */; };
-		DDB4B72F275A788600E96979 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4B72C275A788600E96979 /* SearchViewController.swift */; };
-		DDB4B731275A794A00E96979 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4B730275A794A00E96979 /* HistoryViewController.swift */; };
-		DDB4B732275A794A00E96979 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4B730275A794A00E96979 /* HistoryViewController.swift */; };
-		DDB4B733275A794A00E96979 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4B730275A794A00E96979 /* HistoryViewController.swift */; };
-		DDB4B736275A7C4700E96979 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4B735275A7C4700E96979 /* ImageCollectionViewCell.swift */; };
-		DDB4B737275A7C4700E96979 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4B735275A7C4700E96979 /* ImageCollectionViewCell.swift */; };
-		DDB4B738275A7C4700E96979 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4B735275A7C4700E96979 /* ImageCollectionViewCell.swift */; };
-		DDB4B73B275B28F900E96979 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4B73A275B28F900E96979 /* APIService.swift */; };
-		DDB4B73C275B28F900E96979 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4B73A275B28F900E96979 /* APIService.swift */; };
-		DDB4B73D275B28F900E96979 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4B73A275B28F900E96979 /* APIService.swift */; };
-		DDB4B73F275B2CBF00E96979 /* SearchImageAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4B73E275B2CBF00E96979 /* SearchImageAPIService.swift */; };
-		DDB4B740275B2CBF00E96979 /* SearchImageAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4B73E275B2CBF00E96979 /* SearchImageAPIService.swift */; };
-		DDB4B741275B2CBF00E96979 /* SearchImageAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4B73E275B2CBF00E96979 /* SearchImageAPIService.swift */; };
-		DDB4B743275B37CD00E96979 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4B742275B37CD00E96979 /* SearchResult.swift */; };
-		DDB4B744275B37CD00E96979 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4B742275B37CD00E96979 /* SearchResult.swift */; };
-		DDB4B745275B37CD00E96979 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4B742275B37CD00E96979 /* SearchResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +69,12 @@
 		DD3E4606275E4F8200B6FEA0 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		DD3E4608275E534900B6FEA0 /* SearchHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistory.swift; sourceTree = "<group>"; };
 		DD3E460A275E552300B6FEA0 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		DD7CF1552764827800E16AA4 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		DD7CF1562764827800E16AA4 /* SearchImageAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchImageAPIService.swift; sourceTree = "<group>"; };
+		DD7CF159276482A100E16AA4 /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		DD7CF15C276482B200E16AA4 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		DD7CF15E276482C400E16AA4 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		DD7CF15F276482C400E16AA4 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		DDB4B6F52759F01700E96979 /* Flicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDB4B6F82759F01700E96979 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDB4B6FA2759F01700E96979 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,12 +87,6 @@
 		DDB4B7152759F01C00E96979 /* FlickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDB4B7192759F01C00E96979 /* FlickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerUITests.swift; sourceTree = "<group>"; };
 		DDB4B71B2759F01C00E96979 /* FlickerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		DDB4B72C275A788600E96979 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = ../../../SearchViewController.swift; sourceTree = "<group>"; };
-		DDB4B730275A794A00E96979 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HistoryViewController.swift; path = ../../../HistoryViewController.swift; sourceTree = "<group>"; };
-		DDB4B735275A7C4700E96979 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageCollectionViewCell.swift; path = ../../../ImageCollectionViewCell.swift; sourceTree = "<group>"; };
-		DDB4B73A275B28F900E96979 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIService.swift; path = ../../../APIService.swift; sourceTree = "<group>"; };
-		DDB4B73E275B2CBF00E96979 /* SearchImageAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchImageAPIService.swift; path = ../../../SearchImageAPIService.swift; sourceTree = "<group>"; };
-		DDB4B742275B37CD00E96979 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchResult.swift; path = ../../../SearchResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,8 +172,8 @@
 		DDB4B728275A726700E96979 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				DDB4B72C275A788600E96979 /* SearchViewController.swift */,
-				DDB4B730275A794A00E96979 /* HistoryViewController.swift */,
+				DD7CF15E276482C400E16AA4 /* HistoryViewController.swift */,
+				DD7CF15F276482C400E16AA4 /* SearchViewController.swift */,
 				DD3E460A275E552300B6FEA0 /* TabBarController.swift */,
 			);
 			path = Controller;
@@ -182,7 +182,7 @@
 		DDB4B729275A727500E96979 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DDB4B742275B37CD00E96979 /* SearchResult.swift */,
+				DD7CF159276482A100E16AA4 /* SearchResult.swift */,
 				DD3E4606275E4F8200B6FEA0 /* History.swift */,
 			);
 			path = Model;
@@ -199,7 +199,7 @@
 		DDB4B734275A7C1E00E96979 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DDB4B735275A7C4700E96979 /* ImageCollectionViewCell.swift */,
+				DD7CF15C276482B200E16AA4 /* ImageCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -207,8 +207,8 @@
 		DDB4B739275B28D500E96979 /* WebServices */ = {
 			isa = PBXGroup;
 			children = (
-				DDB4B73A275B28F900E96979 /* APIService.swift */,
-				DDB4B73E275B2CBF00E96979 /* SearchImageAPIService.swift */,
+				DD7CF1552764827800E16AA4 /* APIService.swift */,
+				DD7CF1562764827800E16AA4 /* SearchImageAPIService.swift */,
 				DD3E4604275E326400B6FEA0 /* CacheManager.swift */,
 			);
 			path = WebServices;
@@ -346,17 +346,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD3E460B275E552300B6FEA0 /* TabBarController.swift in Sources */,
-				DDB4B72D275A788600E96979 /* SearchViewController.swift in Sources */,
-				DDB4B743275B37CD00E96979 /* SearchResult.swift in Sources */,
 				DD3E4607275E4F8200B6FEA0 /* History.swift in Sources */,
-				DDB4B736275A7C4700E96979 /* ImageCollectionViewCell.swift in Sources */,
+				DD7CF1572764827800E16AA4 /* APIService.swift in Sources */,
+				DD7CF1582764827800E16AA4 /* SearchImageAPIService.swift in Sources */,
 				DDB4B6F92759F01700E96979 /* AppDelegate.swift in Sources */,
+				DD7CF160276482C400E16AA4 /* HistoryViewController.swift in Sources */,
+				DD7CF161276482C400E16AA4 /* SearchViewController.swift in Sources */,
+				DD7CF15D276482B200E16AA4 /* ImageCollectionViewCell.swift in Sources */,
 				DD3E4605275E326400B6FEA0 /* CacheManager.swift in Sources */,
 				DDB4B6FB2759F01700E96979 /* SceneDelegate.swift in Sources */,
-				DDB4B73F275B2CBF00E96979 /* SearchImageAPIService.swift in Sources */,
-				DDB4B73B275B28F900E96979 /* APIService.swift in Sources */,
 				DD3E4609275E534900B6FEA0 /* SearchHistory.swift in Sources */,
-				DDB4B731275A794A00E96979 /* HistoryViewController.swift in Sources */,
+				DD7CF15A276482A100E16AA4 /* SearchResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,17 +364,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDB4B740275B2CBF00E96979 /* SearchImageAPIService.swift in Sources */,
 				DD3E460E275F0E7900B6FEA0 /* CacheManager.swift in Sources */,
+				DD7CF168276482EF00E16AA4 /* SearchResult.swift in Sources */,
+				DD7CF164276482D100E16AA4 /* SearchViewController.swift in Sources */,
+				DD7CF166276482E900E16AA4 /* ImageCollectionViewCell.swift in Sources */,
+				DD7CF16C276482F600E16AA4 /* SearchImageAPIService.swift in Sources */,
 				DD3E4612275F0E8900B6FEA0 /* TabBarController.swift in Sources */,
-				DDB4B732275A794A00E96979 /* HistoryViewController.swift in Sources */,
-				DDB4B73C275B28F900E96979 /* APIService.swift in Sources */,
 				DD3E4610275F0E7E00B6FEA0 /* History.swift in Sources */,
-				DDB4B72E275A788600E96979 /* SearchViewController.swift in Sources */,
-				DDB4B737275A7C4700E96979 /* ImageCollectionViewCell.swift in Sources */,
+				DD7CF16A276482F300E16AA4 /* APIService.swift in Sources */,
+				DD7CF162276482CC00E16AA4 /* HistoryViewController.swift in Sources */,
 				DDB4B7102759F01C00E96979 /* FlickerTests.swift in Sources */,
 				DD3E460C275F0E7000B6FEA0 /* SearchHistory.swift in Sources */,
-				DDB4B744275B37CD00E96979 /* SearchResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,18 +382,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDB4B72F275A788600E96979 /* SearchViewController.swift in Sources */,
 				DD3E460D275F0E7100B6FEA0 /* SearchHistory.swift in Sources */,
-				DDB4B745275B37CD00E96979 /* SearchResult.swift in Sources */,
 				DD3E4611275F0E7F00B6FEA0 /* History.swift in Sources */,
-				DDB4B738275A7C4700E96979 /* ImageCollectionViewCell.swift in Sources */,
+				DD7CF169276482EF00E16AA4 /* SearchResult.swift in Sources */,
+				DD7CF165276482D200E16AA4 /* SearchViewController.swift in Sources */,
+				DD7CF16B276482F300E16AA4 /* APIService.swift in Sources */,
 				DDB4B71A2759F01C00E96979 /* FlickerUITests.swift in Sources */,
+				DD7CF16D276482F700E16AA4 /* SearchImageAPIService.swift in Sources */,
 				DDB4B71C2759F01C00E96979 /* FlickerUITestsLaunchTests.swift in Sources */,
 				DD3E460F275F0E7900B6FEA0 /* CacheManager.swift in Sources */,
-				DDB4B741275B2CBF00E96979 /* SearchImageAPIService.swift in Sources */,
+				DD7CF167276482EA00E16AA4 /* ImageCollectionViewCell.swift in Sources */,
+				DD7CF163276482CD00E16AA4 /* HistoryViewController.swift in Sources */,
 				DD3E4613275F0E8A00B6FEA0 /* TabBarController.swift in Sources */,
-				DDB4B73D275B28F900E96979 /* APIService.swift in Sources */,
-				DDB4B733275A794A00E96979 /* HistoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
